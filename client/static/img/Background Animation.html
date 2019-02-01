@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)file:///D:/WoodFlake/we3dx/animation.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <link href="./Background Animation_files/css" rel="stylesheet">
+  <link rel="stylesheet" href="./Background Animation_files/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="./Background Animation_files/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <title>Background Animation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    @keyframes mymovevertical {
+      0% {
+        height: 0px;
+      }
+      100% {
+        height:37%;
+      }
+    }
+    .left {
+      background-color: none;
+      padding-top: 10%;
+      padding-bottom: 10%;
+      padding-left: 5%;
+      padding-right: 5%;
+      font-family: 'Expletus Sans', cursive;
+      color: #302d2c;
+      margin-top: 2%;
+    }
+
+    body {
+      height: 100%;
+      background-image: url(./numeral1_bckgrnd.svg);
+      background-size:100% 100%;
+      -o-background-size: 100% 100%;
+      -webkit-background-size: 100% 100%;
+      background-size:cover;
+    }
+
+    .col-lg-4 [class="right"] {
+      margin-top: 50%;
+    }
+
+    .right {
+      background-color: none;
+      font-family: 'Expletus Sans', cursive;
+      margin-top: 2%;
+    }
+
+    body {
+      background-color: #D8D0BC;
+    }
+
+    a {
+      font-family: 'Mallanna', sans-serif;
+      font-size: 20px;
+      text-decoration: none;
+      color: #fc3c1d;
+    }
+
+    a: hover {
+      text-decoration: none;
+    }
+
+    .links {
+      *zoom: 1;
+      padding: 50px;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      text-align: center;
+      background: #313131;
+    }
+    .links:before, .links:after {
+      content: "";
+      display: table;
+    }
+    .links:after {
+      clear: both;
+    }
+
+    .link-effect-12 a {
+      color: #fc3c1d;
+      padding: 10px;
+      position: relative;
+      overflow: hidden;
+      display: inline-block;
+      -moz-transition: ease-out 0.3s 0.1s;
+      -o-transition: ease-out 0.3s 0.1s;
+      -webkit-transition: ease-out 0.3s;
+      -webkit-transition-delay: 0.1s;
+      transition: ease-out 0.3s 0.1s;
+    }
+    .link-effect-12 a span::before {
+      width: 100%;
+      height: 2px;
+      background: #fc3c1d;
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      -moz-transition: 0.1s;
+      -o-transition: 0.1s;
+      -webkit-transition: 0.1s;
+      transition: 0.1s;
+      -moz-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+    .link-effect-12 a span::after {
+      width: 100%;
+      height: 2px;
+      background: #fc3c1d;
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      -moz-transition: 0.1s 0.2s;
+      -o-transition: 0.1s 0.2s;
+      -webkit-transition: 0.1s;
+      -webkit-transition-delay: 0.2s;
+      transition: 0.1s 0.2s;
+      -moz-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    .link-effect-12 a::before {
+      width: 2px;
+      height: 100%;
+      background: #fc3c1d;
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      -moz-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%);
+      -moz-transition: 0.1s 0.3s;
+      -o-transition: 0.1s 0.3s;
+      -webkit-transition: 0.1s;
+      -webkit-transition-delay: 0.3s;
+      transition: 0.1s 0.3s;
+    }
+    .link-effect-12 a::after {
+      width: 2px;
+      height: 100%;
+      background: #fc3c1d;
+      content: "";
+      position: absolute;
+      right: 0px;
+      bottom: 0;
+      -moz-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%);
+      -moz-transition: 0.1s 0.1s;
+      -o-transition: 0.1s 0.1s;
+      -webkit-transition: 0.1s;
+      -webkit-transition-delay: 0.1s;
+      transition: 0.1s 0.1s;
+    }
+    .link-effect-12 a:hover {
+      color: #fc3c1d;
+      text-decoration: none;
+    }
+    .link-effect-12 a:hover::before, .link-effect-12 a:hover::after {
+      -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    .link-effect-12 a:hover span::before, .link-effect-12 a:hover span::after {
+      -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+
+    .btn-link {
+      color: black;
+      text-decoration: none;
+    }
+
+    .btn-link:hover {
+      color: black;
+      text-decoration: none;
+    }
+
+    .btn-link:focus {
+      color: black;
+      text-decoration: none;
+    }
+
+    .card-header {
+      background: none;
+    }
+
+    .it-bg {
+      background: none;
+      border: none;
+    }
+
+    .col
+
+    .card-header {
+      padding: 2px;
+    }
+
+    .icon {
+      margin-right: 20px;
+    }
+
+    #bottom {
+      width: 1px;
+      height: 10px;
+      bottom: 0px;
+      background: #fc3c1d;
+      position: absolute;
+      -webkit-animation: mymovevertical 3s;  /* Safari 4.0 - 8.0 */
+      -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+      animation: mymovevertical 3s;
+      animation-iteration-count:infinite;
+      animation-direction: alternate;
+      animation-fill-mode: backwards;
+    }
+    #top{
+      width: 1px;
+      height: 10px;
+      background:#fc3c1d;
+      position: absolute;
+      -webkit-animation: mymovevertical 3s;  /* Safari 4.0 - 8.0 */
+      -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+      animation: mymovevertical 3s;
+      animation-iteration-count:infinite;
+      animation-direction: alternate;
+      animation-fill-mode: backwards;
+    }
+  </style>
+
+</head>
+<body>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-4 col-md-12">
+        <div class="left">
+          <h2>Health Care</h2>
+          <div>
+            <p>
+            Turning up every aspect of the sector, get it executed by a team of experts understanding the complete needs in healthcare.
+            </p>
+            <p>
+            Doctors | Pharmaceutical Co. | Medical Enterprises | Healthcare Enterprises
+            </p>
+            <p>
+            Education, UI and UX, Web Development, Mobile Technology, Product Testing
+            </p>
+            <section class="link"><nav class="link-effect-12" id="link-effect-12"><a href="file:///D:/WoodFlake/we3dx/animation.html"><span>SEE MORE</span></a></nav></section>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-12">
+        <div class="row" style="height: 100vh; background-image: url(&#39;./ss1 we3dx.svg&#39;); background-position: 28.3% 50%; background-repeat: no-repeat; background-size: 38% 38%;">
+          <div class="col-lg-4"></div>
+          <div class="col-lg-8">
+            <div id="top"></div>
+            <div id="bottom"></div>
+          </div>
+        </div>
+
+        <div class="d-block d-lg-none" style="height: 20vh; background-image: url(&#39;./ss1 we3dx.svg&#39;); background-position: center center; background-repeat: no-repeat; background-size: 100% 100%">
+          
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-12">
+        <div class="right">
+          <div id="accordion">
+            <div class="card it-bg">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id="it-btn1">
+                    <i class="fas fa-plus icon"></i>INNOVATION SPECIALIST
+                  </button>
+                </h5>
+              </div>
+
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  Solutions allowing brands to reach disruptive and creative values.
+                </div>
+              </div>
+            </div>
+            <div class="card it-bg">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" id="it-btn2">
+                    <i class="fas fa-plus icon"></i>PRODUCT MANAGEMENT
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                  Optimizing products while maximizing return on investment.
+                </div>
+              </div>
+            </div>
+            <div class="card it-bg">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" id="it-btn3">
+                    <i class="fas fa-plus icon"></i>SERVICE DESIGN
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                  Identifying challenges and opportunities to improve current or future services.
+                </div>
+              </div>
+            </div>
+            <div class="card it-bg">
+              <div class="card-header" id="headingFour">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" id="it-btn4">
+                    <i class="fas fa-plus icon"></i>VISUAL DESIGN
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                <div class="card-body">
+                  Pleasing graphic models and systemic design that emotionally define product environment and market on same grounds.
+                </div>
+              </div>
+            </div>
+            <div class="card it-bg">
+              <div class="card-header" id="headingFive">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" id="it-btn5">
+                    <i class="fas fa-plus icon"></i>TECHNICAL ARCHITECTURE
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                <div class="card-body">
+                  Assuring clear and consistent technical vision predicting right value and scope for future.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+<script>
+  function classToggle() {
+    this.children[0].classList.toggle('fa-plus');
+    this.children[0].classList.toggle('fa-minus');
+}
+  document.querySelector('#it-btn1').addEventListener('click', classToggle);
+  document.querySelector('#it-btn2').addEventListener('click', classToggle);
+  document.querySelector('#it-btn3').addEventListener('click', classToggle);
+  document.querySelector('#it-btn4').addEventListener('click', classToggle);
+  document.querySelector('#it-btn5').addEventListener('click', classToggle);
+</script>
+
+<script src="./Background Animation_files/jquery-3.2.1.slim.min.js.download" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="./Background Animation_files/popper.min.js.download" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="./Background Animation_files/bootstrap.min.js.download" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body></html>
