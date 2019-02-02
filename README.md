@@ -7,5 +7,6 @@ MEVN-App is the boilerplate code that I use as a strting point to develop a comp
   - Vue with Vuetify (Material Design)
   - Node JS API for Authentication, File Uploads and Email Service.
   - Separate front-end and back-end code base (MVVC architecture).
+  - Also the client is PWA comapaitible. :)
 
 > Please look in client and server subdirectories for installation instructions.
